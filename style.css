@@ -82,6 +82,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.avatar img {
+  height: 35vw;
+  border-radius: 100%;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

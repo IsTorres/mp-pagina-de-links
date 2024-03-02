@@ -1,24 +1,22 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { user } from './userData.json'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+function myfunc() {
+  console.log(user.name);
+  const name = user.name;
+  const prevText = document.getElementById('user').innerText;
+  document.getElementById('user').innerText = prevText + ' ' + name;
+};
 
-setupCounter(document.querySelector('#counter'))
+const app = document.getElementById('app');
+
+document.getElementById('avatar').innerHTML = `
+<img src=${user.avatar}></img`;
+document.getElementById('name').innerText = user.name;
+document.getElementById('description').innerText = user.description;
+
+const btn = document.getElementById('btn')
+btn.addEventListener('click', myfunc);
+
+
+app.createElement('button');

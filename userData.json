@@ -1,0 +1,18 @@
+{
+    "user":{
+
+        "name": "Ismael Torres de Freitas Vieira",
+        "avatar": "./public/avatar.jpg",
+        "description": "Just a random guy...",
+        "links": {
+            "Portifolio":"www.port",
+            "Livro":"www.book",
+            "Dale":"www.dele"
+        },
+        "socialLinks": {
+            "insta":"www",
+            "x":"www",
+            "LinkedIn":"www"
+        }
+    }
+}
